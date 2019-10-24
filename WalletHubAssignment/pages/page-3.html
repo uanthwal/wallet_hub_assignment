@@ -1,0 +1,78 @@
+<div ng-controller="operationsController" style="background-color:#607D8B;">
+    <div>
+        <a href="#/" class="btn btn-primary btn-lg">Home</a>
+    </div>
+    <div class="first-half">
+        <h2>Solution of #4</h2>
+        <form class="table-style-1">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon"><i class="fa fa-search"></i></div>
+                    <input type="text" class="form-control" placeholder="Search" ng-model="searchInput">
+                </div>
+            </div>
+        </form>
+        <table class="table table-bordered table-style-1">
+            <thead>
+                <tr>
+                    <td>
+                        <a href="#othertasks" ng-click="sortType = 'name'; sortReverse = !sortReverse">
+                            Name
+                            <span ng-show="sortType == 'name' && !sortReverse" class="fa fa-caret-down"></span>
+                            <span ng-show="sortType == 'name' && sortReverse" class="fa fa-caret-up"></span>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#othertasks" ng-click="sortType = 'age'; sortReverse = !sortReverse">
+                            Age
+                            <span ng-show="sortType == 'age' && !sortReverse" class="fa fa-caret-down"></span>
+                            <span ng-show="sortType == 'age' && sortReverse" class="fa fa-caret-up"></span>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#othertasks" ng-click="sortType = 'value'; sortReverse = !sortReverse">
+                            Value
+                            <span ng-show="sortType == 'value' && !sortReverse" class="fa fa-caret-down"></span>
+                            <span ng-show="sortType == 'value' && sortReverse" class="fa fa-caret-up"></span>
+                        </a>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="i in data | orderBy:sortType:sortReverse | filter:searchInput">
+                    <td>{{i.name}}</td>
+                    <td>{{i.age}}</td>
+                    <td>{{i.value}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="second-half">
+        <div>
+            <h2> Solution of #5</h2>
+            <input type="text" class="input-sm" ng-model="val" placeholder="Mobile number"  maxlength="14" numbers-only />
+        </div>
+        <div class="sol">
+            <h2> Solution of #6</h2>
+            <input type="text" class="input-sm" ng-model="currency" placeholder="currency" maxlength="5" currency-only />
+        </div>
+        <div class="sol">
+            <h2> Solution of #7</h2>
+            <input ng-model="first" class="input-sm input-style-2" ng-change="addValue()" placeholder="#1" type="number" />
+            + <input ng-model="second" class="input-sm  input-style-2" ng-change="addValue()" placeholder="#2" type="number" />
+            + <input ng-model="third" class="input-sm input-style-2" ng-change="addValue()" placeholder="#3" type="number" />
+            = <input placeholder="Sum" class="input-sm  input-style-2" type="text" ng-model="total" ng-change="sumChanged()" />
+
+        </div>
+        <div class="sol">
+            <h2> Solution of #8</h2>
+            <form>
+                <input type="text" class="input-sm input-style-1" id="part1" ng-model="myObject.part1" maxlength="5" move-next-on-maxlength />
+                - <input type="text" class="input-sm input-style-1" id="part2" ng-model="myObject.part2" maxlength="5" move-next-on-maxlength />
+                - <input type="text" class="input-sm input-style-1" id="part3" ng-model="myObject.part3" maxlength="5" move-next-on-maxlength />
+            </form>
+        </div>
+    </div>
+</div>
+
+

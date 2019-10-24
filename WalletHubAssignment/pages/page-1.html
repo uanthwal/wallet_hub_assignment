@@ -1,0 +1,11 @@
+<h1>AngularJS Animations</h1>
+<h2>Home</h2>
+<form ng-controller="inputController">
+    <h2>Please enter your details:</h2>
+    <input class="input-style-3" type="text" placeholder="Enter your name" ng-model="user.name" />
+    <input class="input-style-3" type="text" placeholder="Enter your age" ng-model="user.age" />
+    <input class="input-style-3" type="text" placeholder="Enter mobile number" ng-model="user.mobile" />
+    <button class="btn-cstm" ng-click="submitFormData(user)">Save</button>
+</form>
+<a href="#displayInfo" class="btn btn-succes btn-lg">Display Info</a>
+<a href="#othertasks" class="btn btn-danger btn-lg">Other Tasks</a>

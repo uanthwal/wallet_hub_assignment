@@ -1,0 +1,6 @@
+c:\users\upendra\documents\visual studio 2013\Projects\WalletHubAssignment\WalletHubAssignment\bin\WalletHubAssignment.dll.config
+c:\users\upendra\documents\visual studio 2013\Projects\WalletHubAssignment\WalletHubAssignment\bin\WalletHubAssignment.dll
+c:\users\upendra\documents\visual studio 2013\Projects\WalletHubAssignment\WalletHubAssignment\bin\WalletHubAssignment.pdb
+c:\users\upendra\documents\visual studio 2013\Projects\WalletHubAssignment\WalletHubAssignment\obj\Debug\WalletHubAssignment.csprojResolveAssemblyReference.cache
+c:\users\upendra\documents\visual studio 2013\Projects\WalletHubAssignment\WalletHubAssignment\obj\Debug\WalletHubAssignment.dll
+c:\users\upendra\documents\visual studio 2013\Projects\WalletHubAssignment\WalletHubAssignment\obj\Debug\WalletHubAssignment.pdb
